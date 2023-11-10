@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+.header h1 {
+  cursor: pointer;
+}
+
+.header {
+  height: 40px;
+  justify-content: space-between;
+  padding-block: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+main {
+  /* max-width: 800px; */
+  margin: 20px;
+  padding: 20px;
+}
+#supplier-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+/* Filters */
+#filters {
+  margin-bottom: 20px;
+}
+
+select {
+  margin: 0 10px;
+}
+
+/* Supplier Cards */
+.supplier-card {
+  width: 300px;
+  min-height: 350px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.supplier-card h2 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+/* Pagination */
+/* #pagination {
+    text-align: center;
+    margin-top: 20px;
+} */
+
+button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+#number {
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    margin: 10px;
+  }
+  .supplier-card {
+    width: 300px;
+  }
+  .supplier-list {
+    margin: 10px;
+  }
+}
+@media (max-width: 935px) {
+  main {
+    margin-top: 50px;
+  }
+  .supplier-list {
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .supplier-card {
+    width: 330px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 783px) {
+  .supplier-card {
+    width: 280px;
+  }
+  .supplier-list {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 685px) {
+  .supplier-card {
+    width: 550px;
+  }
+  footer {
+    height: 30px;
+  }
+  button {
+    padding: 2px;
+    margin-bottom: 5px;
+  }
+  select {
+    margin: 0;
+  }
+  option {
+    margin: 0;
+  }
+}
+
+@media (max-width: 615px) {
+  #filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    height: 100px;
+  }
+  main {
+    margin-top: 100px;
+  }
+}

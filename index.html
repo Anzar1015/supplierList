@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Supplier List</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 onclick="reload()">Supplier List</h1>
+        <div id="filters">
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value="">Select</option>
+            <option value="Ambulance">Ambulance</option>
+            <option value="Bed">Bed</option>
+            <option value="Fabiflu">Fabiflu</option>
+            <option value="Oxygen">Oxygen</option>
+            <option value="Plasma">Plasma</option>
+            <option value="Remdesivir">Remdesivir</option>
+            <option value="Tocilizumab">Tocilizumab</option>
+          </select>
+          <label for="channel">Channel:</label>
+          <select id="channel">
+            <option value="">Select</option>
+            <option value="twitter">Twitter</option>
+            <option value="APbedsAPI.">APbedsAPI.</option>
+            <option value="SpringMVC_Govt_Telangana">Telangana_Govt</option>
+            <option value="bihar_covid_beds">bihar_covid_beds</option>
+            <option value="main">Main</option>
+          </select>
+          <label for="state">State:</label>
+          <select id="state">
+            <option value="">Select</option>
+            <option value="andhra pradesh">Andhra pradesh</option>
+            <option value="arunachal pradesh">Arunachal pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="delhi">Delhi</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal pradesh">Himachal pradesh</option>
+            <option value="jammu">Jammu</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnatak">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya pradesh">Madhya pradesh</option>
+            <option value="maharashtra">Maharashtara</option>
+            <option value="manipur">Manipur</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="tamil nadu">Tamil nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="uttar pradesh">Uttar pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west bangal">West bangal</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="supplier-list"></div>
+    </main>
+    <footer>
+      <div id="pagination">
+        <button id="prevPage">Previous Page</button>
+        <p id="number"></p>
+        <button id="nextPage">Next Page</button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
